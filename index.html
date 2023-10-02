@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="darshan.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-digimedia-v1.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container1">
+            <nav>
+                <div class="nav-bar">
+                    <i class='bx bx-menu sidebarOpen' ></i>
+                    <span class="logo navLogo"><a style="color: #ff004f;" href="#">Darshan</a></span>
+        
+                    <div class="menu">
+                        <div class="logo-toggle">
+                            <span class="logo"><a href="#">Darshan</a></span>
+                            <i class='bx bx-x siderbarClose'></i>
+                        </div>
+        
+                        <ul class="nav-links">
+                            <li>
+                                <a  id="navcom" href="#about"> About</a>
+                            </li>
+                            <li>
+                                <a  id="navcom" href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a  id="navcom" href="#portfolio">Careers</a>
+                            </li>
+                            <li>
+                                <a id="navcom" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="darkLight-searchBox">
+                        <div class="dark-light">
+                            <i class='bx bx-moon moon'></i>
+                            <i class='bx bx-sun sun'></i>
+                        </div>
+        
+                        <div class="searchBox">
+                           <div class="searchToggle">
+                            <i class='bx bx-x cancel'></i>
+                            <i class='bx bx-search search'></i>
+                           </div>
+        
+                            <div class="search-field">
+                                <input type="text" placeholder="Search...">
+                                <i class='bx bx-search'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-text" data-aos="fade-right">
+                <p>UI/UX Designer</p>
+                <h1>Hello, I'm <span style="-webkit-text-fill-color:  #ff004f;">Darshan</span><br>Vegad from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------ABOUT---------- -->
+    <div id="about">
+        <div class="container1">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="DSC_0553.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="intro">hello<br>I'm darshan<br>
+                        I'm Designer<br>
+                    </p>
+
+                    <p class="intro2">
+                        I'm a big picture thinker. <br>
+                        I like to connect the dots and find solutions to solve people's problems. <br>
+                        I do this by designing and creating products that matter.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>UI/UX Design training at Mastermind Institute</li>
+                            <li><span>2021-2022</span><br>Web app Development</li>
+                            <li><span>2021-2022</span><br>Internship at BPTI goverment collage.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>UI/UX Design training at Mastermind Institute</li>
+                            <li><span>2023 - Current</span><br>IT from BPTI bhavnagar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------SERVICES---------- -->
+    <div id="services">
+        <div class="container1">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i style="-webkit-text-fill-color: aliceblue;" class="fa-brands fa-android"></i>
+                    <h2 style="-webkit-text-fill-color: aliceblue;">App Development</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i style="-webkit-text-fill-color: aliceblue;" class="fa-solid fa-code"></i>
+                    <h2 style="-webkit-text-fill-color: aliceblue;">Web Development</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+
+                    <i style="-webkit-text-fill-color: aliceblue;" class="fa-solid fa-crop-simple"></i>
+                    <h2 style="-webkit-text-fill-color: aliceblue;">UI/UX Design</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------PORTFOLIO--------- -->
+    <div id="portfolio">
+        <div class="container1">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="">
+                    <div class="layer">
+                        <h2>Social Media App</h2>
+                        <p></p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="">
+                    <div class="layer">
+                        <h2>Music App</h2>
+                        <p></p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="">
+                    <div class="layer">
+                        <h2>Online Shopping App or Website</h2>
+                        <p></p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------CONTACT---------- -->
+    <div id="contact">
+        <div class="container1">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>vegaddarshan28@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>6354202263</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input  type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit"  class="btn btn3">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p style="-webkit-text-fill-color: aliceblue;">copyright @ darshan Vegad. Made with <i class="fas fa-heart"></i> by Darshan</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+
+
+    </script>
+       <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+       <script src="script.js"></script>
+    <script>
+        AOS.init({
+  duration: 1200,
+})
+    </script>
+    
+</body>
+
+</html>
