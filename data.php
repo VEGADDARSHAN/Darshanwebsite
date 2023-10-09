@@ -2,9 +2,10 @@
 // Retrieve form data
 $name = $_POST['name'];
 $email = $_POST['email'];
+$msg = $_POST['message'];
 
 // Format the data
-$data = "Name: $name\nEmail: $email\n";
+$data = "Name: $name\nEmail: $email\nMessage: $msg\n";
 
 // Define the filename and open the file for writing
 $filename = "userdata.txt";
