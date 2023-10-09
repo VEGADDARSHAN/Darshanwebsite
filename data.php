@@ -2,20 +2,21 @@
 // Retrieve form data
 $name = $_POST['name'];
 $email = $_POST['email'];
-$msg = $_POST['message'];
+$msg= $_POST['message'];
 
-// Format the data
-$data = "Name: $name\nEmail: $email\nMessage: $msg\n";
 
-// Define the filename and open the file for writing
-$filename = "userdata.txt";
+// Define the CSV file name and open it for appending
+$filename = "userdata.csv";
 $file = fopen($filename, "a"); // "a" mode for append, creates the file if it doesn't exist
 
 if ($file) {
-    // Write the data to the file
-    fwrite($file, $data);
-    
-    // Close the file
+    // Format the data as a CSV row
+    $csvData = "$name, $email,$msg\n";
+
+    // Write the data to the CSV file
+    fwrite($file, $csvData);
+
+    // Close the CSV file
     fclose($file);
 
     echo "User data has been successfully stored in $filename.";
