@@ -272,18 +272,7 @@
             alert('User data has been stored.');
         });
 
-        // Create and trigger download of user data as a JSON file
-        document.getElementById('downloadButton').addEventListener('click', function () {
-            const jsonData = JSON.stringify(userDataArray, null, 2);
-            const blob = new Blob([jsonData], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'user_data.json';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-        });
+     
     </script>
     
 </body>
