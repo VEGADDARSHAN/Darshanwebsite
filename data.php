@@ -1,21 +1,23 @@
-    <?php
+<?php
 // Retrieve form data
 $name = $_POST['name'];
 $email = $_POST['email'];
-$msg= $POST['message']
 
-// Create or open the text file for appending data
-$file = fopen("data.txt", "a");
+// Format the data
+$data = "Name: $name\nEmail: $email\n";
+
+// Define the filename and open the file for writing
+$filename = "userdata.txt";
+$file = fopen($filename, "a"); // "a" mode for append, creates the file if it doesn't exist
 
 if ($file) {
-    // Format the data and write it to the file
-    $data = "Name: $name, Email: $email, Message: $message\n";
+    // Write the data to the file
     fwrite($file, $data);
-
+    
     // Close the file
     fclose($file);
 
-    echo "Form data has been successfully stored in data.txt.";
+    echo "User data has been successfully stored in $filename.";
 } else {
     echo "Error opening the file for writing.";
 }
