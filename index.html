@@ -15,6 +15,10 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.0/dist/aos.css">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>">
+    	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
 
 
     <!-- Additional CSS Files -->
@@ -208,11 +212,11 @@
                     <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form action="userDataForm" method="post">
+                    <form method="post">
                         <input  type="text" id="name" name="name" placeholder="Your Name" required>
                         <input type="email" id="email" name="email" placeholder="Your Email" required>
                         <textarea id="message" name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit"  class="btn btn3">submit</button>
+                        <button type="submit"  class="btn btn3" onclick='SubForm()'>submit</button>
                     </form>
                 </div>
             </div>
@@ -252,25 +256,19 @@
     </script>
     <script>
         // Initialize an empty array to store user data
-        let userDataArray = [];
-
-        document.getElementById('userDataForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const email = document.getElementById('message').value;
-
-            // Create a user data object and push it to the array
-            const userData = {
-                name: name,
-                email: email,
-                message: message
-            };
-
-            userDataArray.push(userData);
-            alert('User data has been stored.');
-        });
+       	function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/QIqfIJduMqjJz5yW/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
 
      
     </script>
